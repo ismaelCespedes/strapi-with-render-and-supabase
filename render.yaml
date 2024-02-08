@@ -1,0 +1,18 @@
+services:
+  # A Docker web service
+  - type: web
+    name: webdis
+    runtime: docker
+    repo: #https://github.com/render-examples/webdis.git # optional
+    region: oregon # optional (defaults to oregon)
+    plan: standard # optional (defaults to starter instance type)
+    branch: master # optional (defaults to master)
+    rootDir: webdis
+    dockerCommand: #./webdis.sh # optional (defaults to Dockerfile command)
+    numInstances: #3 # optional (defaults to 1)
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: ~18
+      - key: NODE_ENV
+        value: production
