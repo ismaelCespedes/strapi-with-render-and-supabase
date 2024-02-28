@@ -37,4 +37,4 @@ npm run build
 yarn build
 ```
 You can find a complete guide on the development of this project
-using the [free options of supabase and render](https://www.free-option.com/dev/strapi+postgresql+supabase+deployed-in-render) at that link.
+in the blog [run strapi in render with postgreSQL DB at supabase, all free](https://www.free-option.com/dev/strapi+postgresql+supabase+deployed-in-render).
